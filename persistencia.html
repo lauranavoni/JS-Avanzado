@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistencia</title>
+</head>
+<body>
+    <!--<script src="persistencia.js"></script>-->
+ 
+    <script>
+       /* var a = 1;
+        function modificarA(param){
+            a = param;
+        }   */
+
+        // storage
+
+        //localstorage
+
+        localStorage.setItem("alumno", "pedro");
+        localStorage.setItem("numero",12458.78);
+        localStorage.setItem("objAlumno", {curso:"javascript"});
+        console.log(localStorage);
+
+        console.log(sessionStorage);
+        addEventListener("storage", e =>{
+            console.log(e);
+        })
+
+        //cookies
+        //path
+        // dominio
+        // max-age segundos
+        //expires vencimiento
+
+        document.cookie = "instituto = Educacion IT; path=/;domain=localhost;"
+    </script>
+ 
+</body>
+</html>
